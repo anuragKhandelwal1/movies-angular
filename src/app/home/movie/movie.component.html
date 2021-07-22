@@ -1,0 +1,21 @@
+<div class="movie-container" *ngIf="movie">
+  <div class="movie-card">
+    <div class="title">{{movie.Title}}</div>
+
+    <div class="poster">
+      <img [src]="movie.Poster" alt="Poster" *ngIf="movie.Poster!=='N/A'">
+      <img src="../../../assets/movie-thumb.webp" alt="Poster" *ngIf="movie.Poster==='N/A'">
+    </div>
+
+    <div class="movie-footer">
+      <div class="info">
+        <div class="label">Year</div>
+        <div class="value">{{movie.Year}}</div>
+        <div class="label">Director</div>
+        <div class="value">{{movie.Director}}</div>
+        <div class="label">Language</div>
+        <div class="value">{{movie.Language}}</div>
+      </div>
+    </div>
+  </div>
+</div>

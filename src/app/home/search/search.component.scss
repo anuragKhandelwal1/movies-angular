@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    font-weight: 600;
+    color: #000;
+    margin: 8px 4px;
+  }
+
+  input {
+    width: 30%;
+    height: 3em;
+    padding: 4px;
+    border-color: #eee;
+    border-radius: 6px;
+  }
+}
